@@ -8,7 +8,7 @@
     <meta name="author" content="">
 
 
-    <title>My Newsletter App</title>
+    <title>MyNewsletter App</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sign-in/">
 
@@ -16,7 +16,85 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="/css/styles.css" rel="stylesheet">
+    <style>
+        @import url(https://fonts.googleapis.com/css2?family=Hind:wght@100;200;300;400;500;600;700&display=swap);
+
+        html,
+        body {
+            height: 100%;
+            font-family: 'Hind', sans-serif;
+        }
+
+        body {
+            display: -ms-flexbox;
+            display: -webkit-box;
+            display: flex;
+            -ms-flex-align: center;
+            -ms-flex-pack: center;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            background-color: #4158D0;
+            background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)
+        }
+
+        .form-signin {
+            width: 100%;
+            max-width: 330px;
+            padding: 15px;
+            margin: 0 auto;
+            border: 2px solid white;
+            border-radius: 10px;
+            box-shadow: 1px -5px 54px 19px rgba(0, 0, 0, 0.35);
+        }
+
+        .form-signin .checkbox {
+            font-weight: 400;
+        }
+
+        .form-signin .form-control {
+            position: relative;
+            box-sizing: border-box;
+            height: auto;
+            padding: 10px;
+            font-size: 20px;
+            background-image: linear-gradient(174.2deg, rgba(255, 244, 228, 1) 7.1%, rgba(240, 246, 238, 1) 67.4%);
+            border: 1px solid pink;
+            text-align: center;
+        }
+
+        .form-signin .form-control:focus {
+            z-index: 2;
+        }
+
+        .top {
+            margin-bottom: -1px;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+        .middle {
+            border-radius: 0%;
+            margin-bottom: -1px;
+        }
+
+        .buttom {
+            margin-bottom: 10px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+
+
+        }
+
+
+
+        .copy {
+            color: white
+        }
+    </style>
 
 
 </head>
@@ -26,7 +104,7 @@
 
 
 
-        <h1 class="h3 mb-3 font-weight-normal">Sign up for my Newsletters</h1>
+        <h1 class="h1 mb-3 font-weight-normal ">Sign up for my Newsletters</h1>
         <hr>
 
         <input type="text" class="form-control top" placeholder="firstname" name="fname" required autofocus>
@@ -34,8 +112,10 @@
         <input type="email" class="form-control buttom" placeholder="email" name="emailId" required>
         </div>
 
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign me up</button>
-        <p class="mt-5 mb-3 text-muted">&copy; 2022</p>
+        <button class="btn btn-lg btn-outline-dark btn-block" type="submit">Sign me up</button>
+        <p class="mt-5 mb-3 text-muted ">
+            <span class="copy">&copy;copyright 2022</span>
+        </p>
     </form>
 </body>
 

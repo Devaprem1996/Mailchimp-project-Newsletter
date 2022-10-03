@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const request = require('request');
 const https = require('https');
+
 
 
 let app = express();
@@ -40,7 +40,7 @@ app.post('/', function (req, res) {
     const url = "https://us9.api.mailchimp.com/3.0/lists/ae670fae56";
     const options = {
         method: 'post',
-        auth: 'deva1:ad2b3a4d8af3ea00c06b9ef9fd73d231d-us9',
+        auth: 'deva1:d2b3a4d8af3ea00c06b9ef9fd73d231d-us9',
     };
     
     // finally ; create a https request() and merge to JsonData to send the details of login to mailchimp server.
